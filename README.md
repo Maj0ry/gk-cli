@@ -1,6 +1,10 @@
 # 🚀 GitKraken CLI
 
+<<<<<<< HEAD
+`gk` is GitKraken on the command line. The core functionality is focused on "Work Items" which can be thought of as the feature or issue you are trying to tackle. This allows you to work with multiple repos at once and get the same UX as if you were in a monorepo. We also provide robust AI-powered commit messages and Pull Request generation. It also provides an MCP server that streamlines working with git and your Issue and git hosting providers.
+=======
 `gk` is GitKraken on the command line. The core functionality is focused on "Work Items" which can be thought of as the feature or issue you are trying to tackle. This allows you to work with multiple repos at once and get the same UX as if you were in a monorepo. We also provide robust AI-powered commit messages and Pull Request generation.
+>>>>>>> ambassador-prerelease
 
 GitKraken CLI is available on macOS, Windows, and Unix systems.
 
@@ -8,6 +12,16 @@ GitKraken CLI is available on macOS, Windows, and Unix systems.
 
 ## Table of Contents
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+- [MCP Server](#mcp-server)
+
+>>>>>>> main
+
+=======
+>>>>>>> ambassador-prerelease
 - [Documentation](#documentation)
 - [Workflows](#workflows)
 - [`git` Command Passthrough](#git-command-passthrough)
@@ -15,6 +29,20 @@ GitKraken CLI is available on macOS, Windows, and Unix systems.
 - [Troubleshooting](#troubleshooting)
 - [Support](#support)
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+## MCP Server
+
+The GitKraken MCP server is a local MCP server that is powerful and easy to use. It wraps git, GitHub, Jira MCP actions as well as provides tools to LLMs that work with GitKraken APIs and functionality. You can find specific installation instructions based on your chosen AI application in the [Help Center](https://help.gitkraken.com/cli/gk-cli-mcp/).
+
+If you want to read more about the MCP server, you can check out the [introduction blog post](https://www.gitkraken.com/blog/introducing-gitkraken-mcp)
+
+>>>>>>> main
+>>>>>>>
+=======
+>>>>>>> ambassador-prerelease
 ## Documentation
 
 `gk help` is going to be your best source for exploring the CLI. But also see the [workflows](#workflows) below.
@@ -102,13 +130,36 @@ gk remote -v
 All binaries can be found on the [releases page][]. Make sure you select the binary for your OS(Linux/Mac/Windows) and CPU architecture (arm64/x86_64/i386).
 
 ### macOS
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+
+If you have the original GitKraken CLI installed, you can use the following command to upgrade to the latest version
+=======
+
+`gk` is available from [Homebrew](https://formulae.brew.sh/cask/gitkraken-cli) with the following command:
+
+Homebrew:
+
+```bash
+brew install gitkraken-cli
+```
+
+Or download it from the [releases page](https://github.com/gitkraken/gk-cli/releases) and add it to your binaries folder:
+>>>>>>> main
+=======
 
 If you have the original GitKraken CLI installed, you can use the following command to upgrade to the latest version:
+>>>>>>> ambassador-prerelease
 
 ```bash
 brew uninstall gitkraken-cli
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ambassador-prerelease
 `gk` is available as a downloadable binary from the [releases page][].
 
 Download it from the [releases page][], unzip it, and add it to your binaries folder:
@@ -137,11 +188,27 @@ Try running `gk setup` again and then click "Open Anyway" to continue.
 
 ![](./images/open-anyway.png)
 
+<<<<<<< HEAD
+=======
+>>>>>>> main
+=======
+>>>>>>> ambassador-prerelease
 ---
 
 ### Unix / Ubuntu
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+`gk` is available as a downloadable binary from the [releases page][]. Once you have it, add it to your binaries folder
+=======
+
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/gitkraken-cli)
+
+`gk` is available as a downloadable binary from the [releases page](https://github.com/gitkraken/gk-cli/releases). Once you have it, add it to your binaries folder:
+>>>>>>> main
+=======
 `gk` is available as a downloadable binary from the [releases page][]. Once you have it, add it to your binaries folder:
+>>>>>>> ambassador-prerelease
 
 ```bash
 mv ~/Downloads/gk /usr/local/bin/gk
@@ -170,6 +237,11 @@ sudo rpm -i ./gk.rpm
 ---
 
 ### Windows
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+=======
+>>>>>>> ambassador-prerelease
 
 #### Optional Enable Auto Command Completion
 
@@ -222,7 +294,23 @@ Then edit your environment variables to add it to your PATH.
 4. In the **System Variables** section, scroll until you find the **PATH** variable. Click on it.
    - If it doesn't exist, create a variable with the name **PATH**.
 5. Add the path to the `gk` binary at the end.
+=======
+`gk` is available from [Winget][winget] with the following command:
 
+<<<<<<< HEAD
+```bash
+winget install gitkraken.cli
+```
+
+## ⚙️ Configuration
+
+### Nerd Fonts
+
+The GitKraken CLI supports Nerd Fonts to display icons for some commands. To ensure correct icon rendering, please obtain and install a Nerd Font available at <https://www.nerdfonts.com/>. After installation, set the selected Nerd Font as the default font for your terminal.
+>>>>>>> main
+
+=======
+>>>>>>> ambassador-prerelease
 ## Troubleshooting
 
 ### `gk login` freezes after authenticating in browser
@@ -237,9 +325,36 @@ Oh-My-Zsh has `gitk` aliased as `gk` and that can create some problems. To fix t
 unalias gk
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
 ## Support
 
 If you encounter any bugs, please submit them to our [Support Portal](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
 
 General feedback and suggestions during testing can be submitted via the "#ambassadors" channel in the [GitKraken Community Slack](https://gitkraken.com/slack) as well as via this [Google Form](https://forms.gle/vAa4x8MaYKWcEdSB8). We will also send a final feedback form at the end of the testing phase.
 
+=======
+
+### Manual macOS Installation
+
+If you install the CLI manually from the releases page on macOS, you will likely run into a security error that looks like this:
+
+![](./images/not-opened.png)
+
+To fix this, go to Settings > Security & Privacy > General and click "Allow Anyway".
+
+![](./images/allow-anyway.png)
+
+Try running `gk setup` again and then click "Open Anyway" to continue.
+
+![](./images/open-anyway.png)
+>>>>>>> main
+=======
+## Support
+
+If you encounter any bugs, please submit them to our [Support Portal](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
+
+General feedback and suggestions during testing can be submitted via the "#ambassadors" channel in the [GitKraken Community Slack](https://gitkraken.com/slack) as well as via this [Google Form](https://forms.gle/vAa4x8MaYKWcEdSB8). We will also send a final feedback form at the end of the testing phase.
+
+>>>>>>> ambassador-prerelease

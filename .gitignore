@@ -1,6 +1,4 @@
-_site
-.jekyll-cache
-.jekyll-metadata
-.snapshots/config.json
-.snapshots/readme.md
 .snapshots/sponsors.md
+.snapshots/readme.md
+.snapshots/config.json
+README.md
